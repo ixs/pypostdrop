@@ -5,22 +5,44 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "postdrop"
 description = "Inject mail into Postfix via cleanup socket"
-authors = [
-  { name = "Andreas Thienemann", email = "andreas@bawue.net" }
-]
-license = { text = "GPLv3+" }
 readme = "README.md"
 requires-python = ">=3.3"
 dependencies = []
+dynamic = [ "version" ]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: System Administrators",
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.6",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Communications :: Email",
+  "Topic :: System :: Systems Administration",
+  "Topic :: Utilities"
+]
 
-[tool.setuptools]
-version = { use_scm = true }
+[[project.authors]]
+name = "Andreas Thienemann"
+email = "andreas@bawue.net"
+
+[project.license]
+text = "GPL-3.0"
 
 [project.urls]
-Homepage = "https://github.com/ixs/postdrop"
+repository = "https://github.com/ixs/postdrop"
 
 [project.scripts]
 pypostdrop = "postdrop.cli:main"
 
-[tool.setuptools.packages.find]
-where = ["."]
+[tool.setuptools]
+packages = { find = {} }
+
+[tool.setuptools_scm]
