@@ -1,3 +1,23 @@
 [build-system]
-requires = ["setuptools"]
+requires = ["setuptools>=61", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "postdrop"
+description = "Inject mail into Postfix via cleanup socket"
+authors = [
+  { name = "Andreas Thienemann", email = "andreas@bawue.net" }
+]
+license = { text = "GPLv3+" }
+readme = "README.md"
+requires-python = ">=3.3"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/ixs/postdrop"
+
+[project.scripts]
+pypostdrop = "postdrop.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]

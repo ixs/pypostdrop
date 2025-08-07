@@ -23,10 +23,14 @@ Designed for developers, testers, and advanced users who want to programmaticall
 
 ## Installation
 
+```bash
+pip install postdrop
+```
+
 Or clone and install manually:
 
 ```bash
-git clone https://github.com/youruser/postfixinjector.git
-cd postfixinjector
+git clone https://github.com/ixs/postdrop.git
+cd postdrop
 pip install .
 ```
