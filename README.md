@@ -15,7 +15,7 @@ Designed for developers, testers, and advanced users who want to programmaticall
 
 ## Requirements
 
-- Python 3.3+
+- Python 3.6+
 - A running Postfix installation.
 - Oermission to write to Postfix `cleanup` service socket.
 - Permissions to write to Postfix’s `pickup` socket.
