@@ -6,6 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "postdrop"
 description = "Inject mail into Postfix via cleanup socket"
 readme = "README.md"
+license = "GPL-3.0-or-later"
 requires-python = ">=3.3"
 dependencies = []
 dynamic = [ "version" ]
@@ -13,7 +14,6 @@ classifiers = [
   "Development Status :: 3 - Alpha",
   "Environment :: Console",
   "Intended Audience :: System Administrators",
-  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
   "Operating System :: POSIX :: Linux",
   "Programming Language :: Python",
   "Programming Language :: Python :: 3",
