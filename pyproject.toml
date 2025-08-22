@@ -7,6 +7,7 @@ name = "postdrop"
 description = "Inject mail into Postfix via cleanup socket"
 readme = "README.md"
 requires-python = ">=3.3"
+license = "GPL-3.0-or-later"
 dependencies = []
 dynamic = [ "version" ]
 classifiers = [
@@ -31,9 +32,6 @@ classifiers = [
 [[project.authors]]
 name = "Andreas Thienemann"
 email = "andreas@bawue.net"
-
-[project.license]
-text = "GPL-3.0-or-later"
 
 [project.urls]
 repository = "https://github.com/ixs/postdrop"
